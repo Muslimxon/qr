@@ -1,0 +1,193 @@
+/* Default styles */@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./assets/background.jpg);
+}
+
+.header {
+    width: 100%;
+    min-height: 300px; /* Use min-height instead of fixed height */
+    border-radius: 15px;
+    background-color: #fafafa;
+    margin-top: -15px;
+    padding: 20px;
+    text-align: center; /* Center align header text */
+}
+
+.menu-button {
+    margin-top: 15px;
+    font-size: 13px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    color: pink;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu-button.active {
+    background-color: pink;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+}
+
+.main-menu-content,
+.bar-content {
+    display: none;
+    margin-top: 30px;
+}
+
+.main-menu-content.active,
+.bar-content.active {
+    display: block;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.breakfast, .hot_meals, .salads, .desserts, .Bezgazlar, .Gazlilar, .Choylar {
+    font-size: 18px;
+    margin: 10px;
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breakfast {
+    background-image: url(./assets/breakfast.jpg);
+}
+
+.hot_meals {
+    background-image: url(./assets/hot\ meals.jpg);
+}
+
+.salads {
+    background-image: url(./assets/salads.jpg);
+}
+
+.desserts {
+    background-image: url(./assets/desserts.jpg);
+}
+
+.Bezgazlar {
+    background-image: url(./assets/Nestle-Pure-Life-Natural-Spring-Water-Plastic-Bottle-1-5L_14651115-ca26-4112-969e-d2c4f8c6e01b.21856f9b95c44a558c3c642b62ed9136.avif);
+    color: #000;
+}
+
+.Gazlilar {
+    background-image: url(./assets/Coca20Cola20120Ltr.jpg);
+    color: black;
+}
+
+.Choylar {
+    background-image: url(./assets/tea.jpg);
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 28px; /* Increase font size for better readability */
+    }
+
+    .menu-button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px; /* Increase font size */
+    }
+
+    .breakfast, .hot_meals, .salads, .desserts, .Bezgazlar, .Gazlilar, .Choylar {
+        width: 220px; /* Increase button width */
+        height: 80px; /* Increase button height */
+        font-size: 20px; /* Increase font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 200px;
+        padding: 15px;
+    }
+
+    .h1 {
+        font-size: 24px; /* Increase font size */
+    }
+
+    .menu-button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px; /* Increase font size */
+    }
+
+    .breakfast, .hot_meals, .salads, .desserts, .Bezgazlar, .Gazlilar, .Choylar {
+        width: 180px; /* Adjust width */
+        height: 70px; /* Adjust height */
+        font-size: 18px; /* Increase font size */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        min-height: 150px;
+        padding: 10px;
+    }
+
+    .h1 {
+        font-size: 25px; /* Increase font size */
+    }
+
+    .menu-button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px; /* Increase font size */
+    }
+
+    .breakfast, .hot_meals, .salads, .desserts, .Bezgazlar, .Gazlilar, .Choylar {
+        width: 260px; /* Adjust width */
+        height: 80px; /* Adjust height */
+        font-size: 16px; /* Increase font size */
+        margin-top: 30px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
